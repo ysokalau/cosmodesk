@@ -1,7 +1,128 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — CosmoDesk</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f8f8fb;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 3rem 3.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 24px rgba(0,0,0,0.04);
+    }
+
+    /* Header */
+    .doc-header {
+      border-bottom: 1px solid #ebebf0;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .doc-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #0f0f1a;
+      border: none;
+      margin: 0 0 0.35rem;
+      padding: 0;
+    }
+
+    .doc-header .updated {
+      font-size: 0.85rem;
+      color: #888;
+      margin: 0;
+    }
+
+    /* Section headings */
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0f0f1a;
+      margin: 2.25rem 0 0.6rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #ebebf0;
+      letter-spacing: -0.2px;
+    }
+
+    /* Body text */
+    p {
+      margin: 0.6rem 0;
+      color: #3a3a4a;
+    }
+
+    /* Lists */
+    ul {
+      margin: 0.6rem 0 0.6rem 1.25rem;
+      color: #3a3a4a;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    li strong {
+      color: #1a1a2e;
+    }
+
+    /* Links */
+    a {
+      color: #5b5bd6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Callout box for the local-first section */
+    .callout {
+      background: #f3f3fd;
+      border-left: 3px solid #5b5bd6;
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+    }
+
+    .callout p { color: #2a2a4a; margin: 0.3rem 0; }
+    .callout ul { margin-top: 0.4rem; }
+
+    /* Footer */
+    .doc-footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ebebf0;
+      font-size: 0.85rem;
+      color: #888;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 1.75rem 1.25rem; }
+      .doc-header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
   <body>
+  <div class="container">
+  <div class="doc-header">
     <h1>Privacy Policy</h1>
-  <p>Updated at 2026-06-14</p>
+    <p class="updated">Updated at 2026-06-14</p>
+  </div>
 
   <p>CosmoDesk ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy
   explains how your personal information is collected, used, and disclosed by
@@ -37,6 +158,7 @@
   </p>
 
   <h1>Local-First Data Storage</h1>
+  <div class="callout">
   <p>CosmoDesk is designed with a <strong>local-first</strong> approach. All data you enter into the app —
     including client profiles, appointments, visit notes, service records, message templates, and photos — is
     stored <strong>on your device</strong> using a local SQLite database and the device's local filesystem.
@@ -46,6 +168,7 @@
     <li>Crash reports and diagnostic data sent to Firebase Crashlytics (see the "Firebase Crashlytics" section below).</li>
     <li>Appointment data you explicitly choose to sync with Google Calendar (see the "Google Sign-In and Google Calendar Sync" section below).</li>
   </ul>
+  </div>
 
   <h1>What Information Do We Collect?</h1>
   <p>We collect information from you when you visit our app, register, or fill out a form.</p>
@@ -353,5 +476,9 @@
   <ul>
     <li>Email: <a href="mailto:y.sokalau@gmail.com">y.sokalau@gmail.com</a></li>
   </ul>
+  <div class="doc-footer">
+    &copy; CosmoDesk. All rights reserved.
+  </div>
+  </div><!-- /.container -->
   </body>
 </html>
